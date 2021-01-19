@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="co.edu.unipiloto.edu.mystopwatchapp.StopwatchActivity">
+
+    <TextView
+        android:id="@+id/time_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:textColor="@color/white"
+        android:textSize="56sp" />
+
+    <Button
+        android:id="@+id/start_button"
+        android:layout_width="355dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@color/teal_200"
+        android:onClick="onClickStart"
+        android:text="@string/start"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="@color/teal_200" />
+
+    <Button
+        android:id="@+id/stop_button"
+        android:layout_width="354dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:background="@color/purple_700"
+        android:onClick="onClickStop"
+        android:text="@string/stop"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="@color/purple_700" />
+
+    <Button
+        android:id="@+id/reset_button"
+        android:layout_width="355dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:background="@color/purple_500"
+        android:onClick="onClickReset"
+        android:text="@string/reset"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="@color/purple_500" />
+
+    <Button
+        android:id="@+id/vuelta_button"
+        android:layout_width="355dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:background="@color/teal_700"
+        android:onClick="onClickVuelta"
+        android:text="@string/vuelta"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="@color/teal_700" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="32dp"
+        android:layout_gravity="center_horizontal">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/vuelta1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/vuelta1"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/tiempo1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/vuelta2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/vuelta2"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/tiempo2"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/vuelta3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/vuelta3"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/tiempo3"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/vuelta4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/vuelta4"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textIsSelectable="false" />
+            <TextView
+                android:id="@+id/tiempo4"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/vuelta5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/vuelta5"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/tiempo5"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/vuelta6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/vuelta6"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/tiempo6"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/vuelta7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/vuelta7"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/tiempo7"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/vuelta8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/vuelta8"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textIsSelectable="false" />
+            <TextView
+                android:id="@+id/tiempo8"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="21dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/vuelta9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/vuelta9"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textIsSelectable="false" />
+            <TextView
+                android:id="@+id/tiempo9"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/vuelta10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/vuelta10"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:id="@+id/tiempo10"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

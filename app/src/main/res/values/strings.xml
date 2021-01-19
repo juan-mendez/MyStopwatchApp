@@ -1,0 +1,17 @@
+<resources>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="reset">Reset</string>
+    <string name="vuelta">Vuelta</string>
+    <string name="vuelta1">Vuelta:1</string>
+    <string name="vuelta2">Vuelta:2</string>
+    <string name="vuelta3">Vuelta:3</string>
+    <string name="vuelta4">Vuelta:4</string>
+    <string name="vuelta5">Vuelta:5</string>
+    <string name="vuelta6">Vuelta:6</string>
+    <string name="vuelta7">Vuelta:7</string>
+    <string name="vuelta8">Vuelta:8</string>
+    <string name="vuelta9">Vuelta:9</string>
+    <string name="vuelta10">Vuelta:10</string>
+
+</resources>
